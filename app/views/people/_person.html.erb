@@ -11,9 +11,14 @@
 
   <p class="my-5">
     <strong class="block font-medium mb-1">Plants:</strong>
-    <% person.plants.easch do |plant| %>
-    <%= plant.name%>
-    <% end %>
+    <ul>
+      <% person.plants.each do |plant| %>
+        <li>
+          <%= plant.name %>
+        </li>
+      <% end %>
+    </ul>
+
   </p>
 
 </div>
